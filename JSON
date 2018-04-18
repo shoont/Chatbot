@@ -1,0 +1,70 @@
+book = {}
+book['intents'] = [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "types",
+         "patterns": ["What types of damages are available for this case?", "What types of damages are available to the plaintiff?" "What types of damages are available in this case?" ],
+         "responses": ["Typically damages are calculate in general and special in California", "California provides special and general damages to plaintiffs"]
+        },
+        {"tag": "general",
+         "patterns": ["Can you explain general damages?", "Explain general damages to the jury?", "What is the meaning of general damages?" ],
+         "responses": ["General damages are non-economic damages suffered by the plaintiff", "General damages are defined as non-economic damages"]
+        },
+        {"tag": "special",
+         "patterns": ["Can you explain special damages?", "Explain special damages to the jury?", "What is the meaning of special damages?" ],
+         "responses": ["Special damages are economic damages suffered by the plaintiff", "Special damages are defined as economic damages"]
+        },
+        {"tag": "noneconomic",
+         "patterns": ["What are noneconomic damages?", "What do noneconomic damages include?", "What is the meaning of noneconomic damages?"],
+         "responses": ["Noneconomic damages are intangible losses and can incldue pain and suffering, mental anguish and loss of consortium", "Some exaples of noneconomic damages are include pain and suffering, mental anguish and loss of consortium, but include all intangible losses"]
+        },
+        {"tag": "economic",
+         "patterns": ["Can are economic damages?", "What do economic damages include?", "What is the meaning of economic damages?" ],
+         "responses": ["Economic damages are tangible losses and can include costs of nursing care, physical rehabilitation and vocational rehabilitation?", "Some examples of economic damages are costs of nursing care, physical rehabilitation and vocational rehabilitation, but can include all tangible losses"],
+        },
+        {"tag": "single",
+         "patterns": ["What is the cost of a single wide trailor?", "What is the price of a single wide trailor?", "How much do you think a single wide trailor costs?"],
+         "responses": ["A single wide trailor costs around forty thousand dollars new, and ten to twenty thousand dollars used."],
+        },
+          {"tag": "double",
+         "patterns": ["What is the cost of a double wide trailor?", "What is the price of a double wide trailor?", "How much do you think a double wide trailor costs?"],
+         "responses": ["A double wide trailor costs around seventy five thousand dollars new, and twenty to fifty thousand dollars used."],
+        },
+          {"tag": "construction",
+         "patterns": ["What do you think the cost of rebuilding the trailor would cost?", "What are the construction costs required to rebuild this trailor?"],
+         "responses": ["Construction costs for a modular home range from seventeen thousand dollars at the low end up to fifty thousand dollars."],
+        },
+          {"tag": "pain",
+         "patterns": ["How would you calculate pain and suffering?", "What is the calculation for pain and suffing?"],
+         "responses": ["Usually pain and suffering is calculated multiplying the medical bills by a multiplier between one and five."],
+        },
+          {"tag": "medical",
+         "patterns": ["What were the total medical costs?"],
+         "responses": ["The plaintiff suffered one thousand dollars in medical bills."],
+        },
+        
+        {"tag": "multiplier",
+         "patterns": ["What should be the multiplier in this case?","What do you believe the multiplier should be?"],
+         "responses": ["The multiplier should be between one and two considering the minor injuries"],
+        },
+        {"tag": "calculated",
+         "patterns": ["What are the calculated pain and suffering damages that should be awarded to the plaintiff?","What do you calculate the pain and suffering to be awared to the plaintiff?"],
+         "responses": ["Two thousand dollars."],
+          },
+        {"tag": "total",
+         "patterns": ["What are the total damages in this case?","What are your calculations for total damages in this case?"],
+         "responses": ["The total damages in this case should be around twenty and fifty thousand dollars."],
+         "context_filter": "damages"
+         }
+   ]
